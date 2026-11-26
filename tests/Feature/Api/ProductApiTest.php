@@ -32,7 +32,7 @@ class ProductApiTest extends TestCase
             'name' => 'Silla Ergonomica',
             'description' => 'Silla de oficina con soporte lumbar',
             'price' => 199.90,
-            'stock' => 10,
+            'stock' => 5,
             'status' => 'active',
         ];
 

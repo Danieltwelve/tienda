@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [ProductController::class, 'index'])->name('home');
+Route::get('/', [TaskController::class, 'index'])->name('home');
 
+Route::resource('tasks', TaskController::class);
 Route::resource('products', ProductController::class);
